@@ -2,7 +2,7 @@
 const inquirer = require("inquirer")
 function init () {
     inquirer.prompt ([
-        //this will be yes or no, continue if yes, stop if no
+        //this will be yes or no, continue if yes, console.log "Thank you" if no.
         {
             type: "input",
             message: "Would you like to add a new employee to the roster?",
@@ -16,7 +16,7 @@ function init () {
         {
             type: "input",
             message: "What is the employee's ID number?",
-            name: "idNumb"
+            name: "idNum"
         }
         {
             type: "input",
@@ -29,7 +29,7 @@ function init () {
         {
             type: "input",
             message:  "What is the manager's office number?",
-            name: "officeNumb"
+            name: "officeNum"
         }
         //if engineer
         {
